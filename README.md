@@ -55,12 +55,25 @@ $ gcc main.c && ./a.out
 ```shell
 $ cd 11
 $ gcc -Wall main.c hello.c
+main.c: In function ‘main’:
+main.c:3: 警告: implicit declaration of function ‘hello’
 $ ./a.out
 ```
 警告は出ますが、コンパイルは成功してa.outが出力されます。
 
 (なお、`#include　<stdio.h>`をhello.cに書いてるのは、printfがhello.cにあるからです。)
 
+### 12 - `implicit declaration of function`を解決する
 
+警告が出た原因は、main.cの中でhello()のプロトタイプ宣言を見つけられなかったからです。
+なので、main.cの中に単純にhello()のプロトタイプ宣言を書けば警告は消えます。
+
+```shell
+$ cd 12
+$ gcc -Wall main.c hello.c
+$ ./a.out
+```
+
+### 13 - もっと多数の.cファイルがあるケースを考えてみる
 
 
