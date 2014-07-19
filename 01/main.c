@@ -7,7 +7,7 @@
  * 下記のようにすれば、プリプロセスの結果を見ることができる。
  * gcc -E main.c
  */
-void main()
+int main()
 {
 #include "part1.c"
 #include "part2.txt"
