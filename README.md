@@ -10,7 +10,7 @@ C言語の分割コンパイルのチュートリアル
 
 ```shell
 $ cd 00
-$ gcc main.c && ./a.out ; echo $?
+$ gcc -Wall main.c && ./a.out ; echo $?
 ```
 
 ここまでは何の変哲もないC言語のプログラムです。
@@ -23,7 +23,7 @@ $ gcc main.c && ./a.out ; echo $?
 
 ```shell
 $ cd 01
-$ gcc main.c && ./a.out ; echo $?
+$ gcc -Wall main.c && ./a.out ; echo $?
 ```
 
 includeがファイルを単純に挿入しているだけであることがわかりましたね。
@@ -42,7 +42,7 @@ $ gcc -E main.c
 
 ```shell
 $ cd 10
-$ gcc main.c && ./a.out
+$ gcc -Wall main.c && ./a.out
 ```
 
 何の変哲もないC言語のプログラムです。
