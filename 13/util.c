@@ -1,9 +1,5 @@
 #include <stdio.h>
-
-void p(char *s)
-{
-    printf("%s", s);
-}
+void p(char *s);
 
 void p_good()
 {
@@ -13,5 +9,10 @@ void p_good()
 void p_newline()
 {
     p("\n");
+}
+
+void p(char *s)
+{
+    printf("%s", s);
 }
 
