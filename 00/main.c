@@ -1,7 +1,6 @@
-#include <stdio.h>
-
 void main()
 {
-    char *s = "hello\n";
-    printf(s);
+    int a = 100;
+    int b = 20;
+    return a + b;
 }
